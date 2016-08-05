@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		section{
+			background-color: #333;
+		}
+		.box{
+			width: 100px;
+		}
+		
+		/*
+		 * =================================
+		 */
+		
+		section{
+			display:flex;
+			height: 400px;
+		}
+		.box{
+			flex-basis : 150px;
+			flex-grow: 1;
+		}
+		.box1{
+			background-color: #ED80F7;
+			flex-grow: 0;
+		}
+		.box2{
+			background-color: #50EDED;
+		}
+		.box3{
+			background-color: #A6ED50;
+			flex-grow: 2;
+		}
+		.box4{
+			background-color: #EDBE50;
+		}
+		.box5{
+			background-color: #EA8431;
+		}
+		.box6{
+			background-color: #EA318A;
+		}
+	</style>
+	
+</head>
+<body>
+	<section>
+		<article class="box box1">1</article>
+		<article class="box box2">2</article>
+		<article class="box box3">3</article>
+		<article class="box box4">4</article>
+		<article class="box box5">5</article>
+		<article class="box box6">6</article>
+	</section>
+</body>
+</html>

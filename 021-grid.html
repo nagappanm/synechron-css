@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link href="lib/bootstrap.css" rel="stylesheet" />
+	<script src="lib/jquery-3.1.0.js"></script>
+	<script>
+		$(function(){
+			/*
+			 */
+			$(window).on("resize", function(){
+				$("#log").html($("body").width())
+			})
+		})
+	</script>
+	<style>
+		.leftBox{
+			height: 50px;
+			background-color: red;
+		}
+		.rightBox{
+			height: 50px;
+			background-color: yellow;
+		}
+		.remainingBox{
+			height: 50px;
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<div class="box container-fluid">
+		<div class="row">
+			<div class="col-xs-1 leftBox"></div>
+			<div class="col-xs-10 remainingBox"></div>
+			<div class="col-xs-1 rightBox"></div>
+		</div>
+	</div>
+	<h1 id="log"></h1>
+</body>
+</html>

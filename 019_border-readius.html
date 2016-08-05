@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script src="lib/modernizr.js"></script>
+	<script>
+		window.onload = function(){
+			// if(window.Modernizr.borderradius){
+			if(window.Modernizr.canvas){
+			// alert("your browser supports border radius");
+			var newtag = document.createElement("script");
+				newtag.setAttribute("src","script/myscript.js");
+				
+				document.getElementsByTagName("head")[0].appendChild(newtag);
+			}else{
+				alert("please update your browser");
+			}
+		}
+	</script>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			border-radius: 10px;
+		}
+		.no-borderradius .box{
+			width: 100px;
+			height: 100px;
+			background-color: white;
+			background-image: url("images/reddy.png");
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<canvas id="can"></canvas>
+</body>
+</html>

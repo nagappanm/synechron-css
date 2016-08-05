@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		section{
+			background-color: #333;
+		}
+		.box{
+			width: 100px;
+			font-family: arial;
+			font-size: 36px;
+			color: white;
+			text-align: center;
+			line-height: 100px;
+			vertical-align: middle;
+		}
+		
+		/* ================================= */
+		 /* 
+		  * justify-content : flex-start(default) | flex-end | center | space-between | space-around
+		  */
+		 
+		 /* 
+		  * align-items: stretch (default) |  flex-start | flex-end | baseline |  center  ;
+		  */
+		
+		section{
+			display:flex;
+			height: 600px;
+			justify-content : center;
+			align-items: baseline;
+			/*
+			flex-flow : row wrap;
+			 */
+		}
+		.box{
+			flex-shrink : 0;
+		}
+		.box1{
+			background-color: #ED80F7;
+		}
+		.box2{
+			background-color: #50EDED;
+		}
+		.box3{
+			background-color: #A6ED50;
+			font-size: 60px;
+		}
+		.box4{
+			background-color: #EDBE50;
+		}
+		.box5{
+			background-color: #EA8431;
+			font-size: 12px;
+		}
+		.box6{
+			background-color: #EA318A;
+		}
+	</style>
+	
+</head>
+<body>
+	<section>
+		<article class="box box1">1</article>
+		<article class="box box2">2</article>
+		<article class="box box3">3</article>
+		<article class="box box4">4</article>
+		<article class="box box5">5</article>
+		<article class="box box6">6</article>
+	</section>
+</body>
+</html>

@@ -1,0 +1,9 @@
+$myNum : 10px;
+$mycol : red;
+
+.box{
+  width : $myNum*10;
+  height : $myNum*20;
+  background-color : darken($mycol, 20%);
+  border :  $myNum/5 solid lighten($mycol, 20%);
+}
